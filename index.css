@@ -330,7 +330,7 @@ footer {
 }
 
 #home, #sobre, #catalogo, #contato {
-    background-color: black;
+    background-color: #252523;
     color: white;
     margin-right: 10px;
     padding: 10px 15px;
@@ -342,5 +342,5 @@ footer {
 }
 
 #home:hover, #sobre:hover, #catalogo:hover, #contato:hover {
-    background-color: #333;
+    background-color: #252523;
 }

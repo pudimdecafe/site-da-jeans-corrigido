@@ -196,3 +196,69 @@ footer {
     }
 }
 
+.mvv-section {
+    padding: 60px 5%;
+    background-color: #f8f9fa;
+}
+
+.mvv-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mvv-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid #333;
+}
+
+.mvv-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.mvv-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.mvv-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin: 0;
+}
+
+/* Cores específicas para cada card */
+.mvv-card:nth-child(1) {
+    border-top-color: #007bff;
+}
+
+.mvv-card:nth-child(1) h3 {
+    color: #007bff;
+}
+
+.mvv-card:nth-child(2) {
+    border-top-color: #28a745;
+}
+
+.mvv-card:nth-child(2) h3 {
+    color: #28a745;
+}
+
+.mvv-card:nth-child(3) {
+    border-top-color: #ffc107;
+}
+
+.mvv-card:nth-child(3) h3 {
+    color: #e68900;
+}
