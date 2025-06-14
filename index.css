@@ -306,3 +306,41 @@ footer {
     }
 }
 
+/* Classe para esconder o cabeçalho em dispositivos móveis */
+.partesuperior.hidden-mobile {
+    transform: translateY(-100%);
+}
+
+#logo {
+    border-radius: 100px;
+    width: 65px;
+    height: 65px;
+}
+
+#nomedamarca {
+    color: white;
+    margin-right: auto;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.nav-buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#home, #sobre, #catalogo, #contato {
+    background-color: black;
+    color: white;
+    margin-right: 10px;
+    padding: 10px 15px;
+    height: 65px;
+    border: none;
+    font-size: large;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#home:hover, #sobre:hover, #catalogo:hover, #contato:hover {
+    background-color: #333;
+}
