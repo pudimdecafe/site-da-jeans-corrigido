@@ -44,7 +44,6 @@
                 <img src="img/imagem4_carrocel.jpg" alt="Imagem 4">
             </div>
 
-            <!--navigation-->
             <div class="navigation">
                 <div class="auto_btn1"></div>
                 <div class="auto_btn2"></div>
@@ -59,6 +58,11 @@
             <label for="radio3" class="manual_btn"></label>
             <label for="radio4" class="manual_btn"></label>
         </div>
+    </div>
+
+    <div class="texto_dentro">
+        Ganhe dinheiro com moda e liberdade!
+        <br>Seja uma revendedora Excelência Jeans
     </div>
     
     <div class="portifolio">Portfólio</div>
@@ -94,6 +98,7 @@
             </div>
             <div class="footer-box">
                 <h3>CONTATOS</h3>
+                <p>E-mail: excelenciajeans@gmail.com </p>                
                 <p>Telefone: (17) 98199-6607<br>
             </div>
             <div class="footer-box">
@@ -114,7 +119,6 @@
         let counter = 1;
         document.getElementById('radio1').checked = true;
 
-        // Função para avançar o slide
         function nextSlide() {
             counter++;
             if(counter > 4) {
@@ -123,21 +127,17 @@
             document.getElementById('radio' + counter).checked = true;
         }
 
-        // Configura o intervalo para trocar os slides automaticamente a cada 5 segundos
         setInterval(nextSlide, 5000);
 
-        // Adiciona funcionalidade aos botões manuais
         document.querySelectorAll('.manual_btn').forEach((btn, index) => {
             btn.addEventListener('click', () => {
                 counter = index + 1;
             });
         });
 
-        // Adiciona transição suave aos slides
         const slides = document.querySelector('.slides');
         slides.style.transition = 'all 0.8s ease';
 
-        // Pausa a rotação automática quando o mouse está sobre o carrossel
         const slider = document.querySelector('.slider');
         let autoSlideInterval;
 
@@ -155,7 +155,6 @@
         // Inicia o carrossel automático
         startAutoSlide();
 
-        // Script para cabeçalho retrátil em dispositivos móveis
         let lastScrollTop = 0;
         let hideTimeout;
         const header = document.querySelector('.partesuperior');
@@ -169,7 +168,6 @@
                 header.classList.remove('hidden-mobile');
                 clearTimeout(hideTimeout);
                 
-                // Esconde o cabeçalho após 3 segundos de inatividade
                 hideTimeout = setTimeout(() => {
                     header.classList.add('hidden-mobile');
                 }, 3000);
@@ -206,7 +204,6 @@
         document.addEventListener('touchstart', showHeader);
         document.addEventListener('touchmove', showHeader);
 
-        // Mostra o cabeçalho quando o mouse se move (para dispositivos híbridos)
         document.addEventListener('mousemove', () => {
             if (isMobile()) {
                 showHeader();
